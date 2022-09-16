@@ -10,6 +10,7 @@ License:        MIT
 URL:            https://github.com/xapi-project/rrd-client-lib/
 Source0: rrd-client-lib.tar.gz
 BuildRequires:  zlib-devel
+BuildRequires:  gcc
 %{?_cov_buildrequires}
 
 %description
