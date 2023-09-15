@@ -1,10 +1,9 @@
-%global package_speccommit 57f3353a57d48d612374f3daee98e236afc273af
+%global package_speccommit 5a478150c325ce1aaf6ed3d376ffa344e67f72e7
 %global package_srccommit v1.4.0
-%define debug_package %{nil}
 
 Name:           rrd-client-lib
-Version:        1.4.0
-Release:        2%{?xsrel}%{?dist}
+Version: 1.4.0
+Release: 3%{?xsrel}%{?dist}
 Summary:        C library for writing RRDD plugins
 License:        MIT
 URL:            https://github.com/xapi-project/rrd-client-lib/
@@ -53,6 +52,9 @@ install librrd.a   %{buildroot}%{_libdir}
 %{?_cov_results_package}
 
 %changelog
+* Wed Apr 05 2023 Edwin Török <edwin.torok@cloud.com> - 1.4.0-3
+- enable building a debuginfo package
+
 * Fri Dec 17 2021 Christian Lindig <christian.lindig@citrix.com> - 1.4.0-1
 - Add --disable-fb flag for Coverity
 
